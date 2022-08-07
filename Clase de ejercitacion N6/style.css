@@ -1,0 +1,115 @@
+html{
+    height: 100%;
+}
+body {
+    border: 15px solid #000;
+    background-color: aliceblue;
+    margin: 0;
+    height: calc(100% - 20px);
+}
+header{                      /*caja*/
+    border-radius: 20px;
+    position: absolute;
+    background-color: #ff0000;
+    width: 40%;
+    height: 80%;
+    top: 10%;
+    left: 30%;
+}
+.contenedor{                 /*circulos*/
+    height: 10%;
+    display: flex;
+}
+.circle1, .circle2, .circle3{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    top: 2.5%;
+}
+.circle1{
+    background-color: #8000ff;
+    left: 10px;
+}
+.circle2{
+    background-color: #000;
+    left: calc(10px + 30px + 10px);
+}
+.circle3{
+    background-color: #ffffff;
+    left: calc(10px + 30px + 10px + 30px + 10px);
+}
+.box{                      /*contenedor de los grids*/
+    position: relative;
+    height: calc(90% - 35%);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.contenedor1{              /*grid 1*/
+    display: grid;
+    grid-template-columns: 70% auto;
+    height: 25%;
+    gap: 10px;
+    padding: 5px;
+}
+.contenedor2{              /*grid 2*/
+    position: relative;
+    display: grid;
+    grid-template-columns: 45% auto;
+    grid-template-rows: 1fr 1fr;
+    height:50%;
+    gap:10px;
+    padding: 5px;
+}
+.contenedor3{             /*grid3*/
+    position: relative;
+    display: grid;
+    height: 25%;
+    grid-template-columns: 30% auto 30%;
+    padding: 5px;
+    gap: 10px;
+}
+.elemento1{
+    background-color: #a5ec3a;
+    border-radius: 25px;
+    grid-column: 1;
+}
+.elemento2{
+    background-color: #a5ec3a;
+    border-radius: 25px;
+    grid-column: 2;
+
+}
+.elemento3{
+    background-color: #a5ec3a;
+    border-radius: 25px;
+    grid-column: 1;
+    grid-row: 1/ span 2;
+}
+.elemento4{
+    background-color: #a5ec3a;
+    border-radius: 25px;
+    grid-column: 2;
+    grid-row: 1;
+}
+.elemento5{
+    background-color: #a5ec3a;
+    border-radius: 25px;
+    grid-column: 2;
+    grid-row: 2;
+}
+.elemento6{
+    background-color: #7fffd4;
+    border-radius: 25px;
+    grid-column: 1;
+}
+.elemento7{
+    background-color: #7fffd4;
+    border-radius: 25px;
+    grid-column: 2;
+}
+.elemento8{
+    background-color: #7fffd4;
+    border-radius: 25px;
+    grid-column: 3;
+}
